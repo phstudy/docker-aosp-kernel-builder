@@ -32,7 +32,7 @@ RUN set -x \
 	&& apt-get remove --purge --auto-remove -y unzip && rm -rf /var/lib/apt/lists/*
 
 ENV ARCH=arm64
-ENV	CROSS_COMPILE=/opt/ndk/android-ndk-${NDK_VERSION}/toolchains/aarch64-linux-android-4.9/prebuilt/linux-x86_64/bin/aarch64-linux-android-
-ENV	CROSS_COMPILE_ARM32=/opt/ndk/android-ndk-${NDK_VERSION}/toolchains/arm-linux-androideabi-4.9/prebuilt/linux-x86_64/bin/arm-linux-androideabi-
+ENV CROSS_COMPILE=/opt/ndk/android-ndk-${NDK_VERSION}/toolchains/aarch64-linux-android-4.9/prebuilt/linux-x86_64/bin/aarch64-linux-android-
+ENV CROSS_COMPILE_ARM32=/opt/ndk/android-ndk-${NDK_VERSION}/toolchains/arm-linux-androideabi-4.9/prebuilt/linux-x86_64/bin/arm-linux-androideabi-
 
 WORKDIR /workdir
