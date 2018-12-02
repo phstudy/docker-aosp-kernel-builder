@@ -1,4 +1,4 @@
-# Docker AOSP kernel builder [![Docker Build Status](https://img.shields.io/docker/build/phstudy/docker-aosp-kernel-builder.svg)](https://hub.docker.com/r/study/docker-aosp-kernel-builder/)
+# Docker AOSP kernel builder [![Docker Build Status](https://img.shields.io/docker/build/study/docker-aosp-kernel-builder.svg)](https://hub.docker.com/r/study/docker-aosp-kernel-builder/)
 Docker image to build an AOSP kernel
 
 ## Example
@@ -8,7 +8,7 @@ $ git clone --single-branch --branch android-msm-marlin-3.18-pie-r2 --depth 1 ht
 
 # Build AOSP kernel for Google Pixel XL
 $ cd msm
-$ docker run --rm --volume $(pwd):/workdir docker-aosp-kernel-builder /bin/bash -c "make marlin_defconfig && make -j8"
+$ docker run --rm --volume $(pwd):/workdir study/docker-aosp-kernel-builder /bin/bash -c "make marlin_defconfig && make -j8"
 
 # Flash your kernel with fastboot
 $ adb reboot bootloader 
