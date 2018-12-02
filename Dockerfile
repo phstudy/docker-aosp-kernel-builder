@@ -22,7 +22,7 @@ RUN set -x \
 	&& rm openjdk-8-jdk_${JAVA_VERSION}.deb \
 	\
 	&& apt-get --no-install-recommends --no-install-suggests -y -f install \
-	&& apt-get install --no-install-recommends --no-install-suggests -y git-core gnupg flex bison gperf build-essential zip curl zlib1g-dev gcc-multilib g++-multilib libc6-dev-i386 lib32ncurses5-dev x11proto-core-dev libx11-dev lib32z-dev libgl1-mesa-dev libxml2-utils xsltproc unzip \
+	&& apt-get install --no-install-recommends --no-install-suggests -y git-core gnupg flex bison gperf build-essential zip curl zlib1g-dev gcc-multilib g++-multilib libc6-dev-i386 lib32ncurses5-dev x11proto-core-dev libx11-dev lib32z-dev libgl1-mesa-dev libxml2-utils xsltproc bc liblz4-tool unzip \
 	\
 	&& mkdir -p /opt/ndk \
 	&& curl -sLO https://dl.google.com/android/repository/android-ndk-${NDK_VERSION}-linux-x86_64.zip \
