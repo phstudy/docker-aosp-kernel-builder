@@ -1,4 +1,4 @@
-# Docker AOSP kernel builder [![Docker Build Status](https://img.shields.io/docker/build/study/docker-aosp-kernel-builder.svg)](https://hub.docker.com/r/study/docker-aosp-kernel-builder/)
+# Docker AOSP kernel builder [![Docker Build Status](https://img.shields.io/docker/automated/study/docker-aosp-kernel-builder.svg)](https://hub.docker.com/r/study/docker-aosp-kernel-builder/)
 Docker image to build an AOSP kernel
 
 ## Example
