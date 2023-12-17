@@ -7,7 +7,7 @@ ENV JAVA_VERSION 8u45-b14-1_amd64
 
 RUN set -x \
 	&& apt-get update \
-	&& apt-get install --no-install-recommends --no-install-suggests -y curl \
+	&& apt-get install --no-install-recommends --no-install-suggests -y curl libssl-dev \
 	\
 	&& curl -sLO http://old-releases.ubuntu.com/ubuntu/pool/universe/o/openjdk-8/openjdk-8-jre-headless_${JAVA_VERSION}.deb \
 	&& dpkg --force-all -i openjdk-8-jre-headless_${JAVA_VERSION}.deb \
